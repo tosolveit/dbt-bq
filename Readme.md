@@ -6,7 +6,7 @@ To install `dbt-bigquery`, use the following command:
 pip3 install dbt-bigquery
 ```
 
-If you encounter the following warning, follow the steps described below:
+If you encounter a similar warning, follow the steps described below:
 
 ```
 WARNING: The script dbt is installed in '/Library/Frameworks/Python.framework/Versions/3.7/bin' which is not on PATH.
@@ -20,7 +20,7 @@ NOTE: The current PATH contains path(s) starting with `~`, which may not be expa
 vim ~/.zshrc
 ```
 
-Add the following line to the `.zshrc` file, save and exit:
+Add the following line to the `.zshrc` file, save and exit, It is important to use the path that is shown in the warning above, your path is highly likely to be different:
 
 ```
 export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH"
