@@ -55,3 +55,17 @@ dbt-duckdb 1.3.4 requires dbt-core~=1.3.0, but you have dbt-core 1.5.1 which is 
 For authentication and access to data sources in BigQuery, there are various configuration options available. Please refer to the instructions provided in the following documentation:
 
 [BigQuery Setup - Local OAuth & gcloud Setup](https://docs.getdbt.com/docs/core/connect-data-platform/bigquery-setup#local-oauth-gcloud-setup)
+
+
+# Getting Started
+
+To get started, set the environment variables for the following keys. Replace them with your own GCP project name and dataset:
+
+```bash
+export GCP_PROJECT='your_gcp_project_name'
+export BQ_DATASET='your_dataset'
+```
+
+Make sure to replace `'your_gcp_project_name'` with the name of your GCP project and `'your_dataset'` with the name of your dataset.
+
+When using the code snippet above or displaying environment variables in documentation, remember to keep the actual values confidential and avoid sharing sensitive information publicly.

@@ -4,8 +4,8 @@ default:
     dev:
       type: bigquery
       method: oauth
-      project: training-ilker
-      dataset:  ga_analysis # You can also use "schema" here
+      project: '{{ env_var("GCP_PROJECT") }}'
+      dataset: '{{ env_var("BQ_DATASET") }}' # You can also use "schema" here
       threads: 1
       job_creation_timeout_seconds: 30
       job_execution_timeout_seconds: 600
@@ -21,7 +21,3 @@ default:
         - https://www.googleapis.com/auth/bigquery
         #- https://www.googleapis.com/auth/cloud-platform
         #- https://www.googleapis.com/auth/drive
-
-
-
-
