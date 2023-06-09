@@ -66,6 +66,16 @@ export GCP_PROJECT='your_gcp_project_name'
 export BQ_DATASET='your_dataset'
 ```
 
-Make sure to replace `'your_gcp_project_name'` with the name of your GCP project and `'your_dataset'` with the name of your dataset.
+Make sure to replace `'your_gcp_project_name'` with the name of your GCP project and `'your_dataset'` with the name of your dataset. Dbt models will be created in this project and dataset.
 
 When using the code snippet above or displaying environment variables in documentation, remember to keep the actual values confidential and avoid sharing sensitive information publicly.
+
+Run the following command, dbt will create the models in your target dataset:
+```bash
+dbt run
+```
+
+You can also customize the command if necessary:
+```bash
+ dbt run --profile=default --target=dev 
+```
