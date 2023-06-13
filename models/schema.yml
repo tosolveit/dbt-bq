@@ -1,7 +1,0 @@
-version: 2
-
-models:
-  - name: hello-world
-    description: hello-world table
-  - name: hello-mars
-    description: hello-mars table
