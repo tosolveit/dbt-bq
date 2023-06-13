@@ -5,3 +5,4 @@ logs/
 .user.yml
 setenvs.sh
 todo
+dbt_packages/
